@@ -217,26 +217,30 @@ export default function FAQsPage() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-gray-900">
-              <div className="page-title">
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
-                <p className="text-xl text-gray-600 mb-8">
-                  Find answers to the most common questions about Saudi domain registration and management
-                </p>
-              </div>
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
+              <p className="text-xl text-gray-600 mb-8">
+                Find answers to the most common questions about Saudi domain registration and management
+              </p>
 
               {/* Enhanced Search Bar with better UX */}
-              <div className="search-container">
+              <div className="search-container max-w-md mx-auto lg:mx-0">
                 <Search className="search-icon w-6 h-6" />
                 <input type="text" placeholder="Type your question here to search..." className="search-input" />
               </div>
-              <p className="text-sm text-gray-500 mt-2 text-center">
+              <p className="text-sm text-gray-500 mt-2 text-center lg:text-left">
                 💡 Try searching for "domain registration", "payment", or "DNS"
               </p>
             </div>
 
-            <div className="hidden lg:block">
-              <img src="/DNS_Solutions_by_stc/faq-illustration.png" alt="FAQ Illustration" className="faq-illustration" />
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-md lg:max-w-lg">
+                <img 
+                  src="/DNS_Solutions_by_stc/faq-illustration.png" 
+                  alt="FAQ Illustration" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
