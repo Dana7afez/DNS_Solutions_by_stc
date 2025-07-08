@@ -688,11 +688,8 @@ function getImagePath(path: string): string {
 
 // Function to fix image paths for GitHub Pages
 function fixImagePaths(htmlContent: string): string {
-  // In production, add the basePath prefix only to images that don't already have it
-  if (process.env.NODE_ENV === 'production') {
-    return htmlContent.replace(/src="\/(?!DNS_Solutions_by_stc\/)([^"]+)"/g, 'src="/DNS_Solutions_by_stc/$1"')
-  }
-  // In development, use paths as-is
+  // Since all images in blog content already have the correct /DNS_Solutions_by_stc/ prefix,
+  // we don't need to modify them further
   return htmlContent
 }
 
