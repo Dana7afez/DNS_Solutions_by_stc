@@ -109,7 +109,7 @@ export default function BlogsPage() {
               <article className="blog-card">
                 <div className="relative overflow-hidden">
                   <img
-                    src={blog.image || "/placeholder.svg"}
+                    src={blog.image || "/DNS_Solutions_by_stc/placeholder.svg"}
                     alt={blog.title}
                     className="blog-image group-hover:scale-105 transition-transform duration-300"
                   />

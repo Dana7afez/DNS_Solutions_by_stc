@@ -568,13 +568,13 @@ export default function UserGuidePage() {
                         proper DNS routing for your domain.
                       </p>
                       <div className="step-image">
-                        <img src="/step3.3.png" alt="Step 2 - DNS Management" />
+                        <img src="/DNS_Solutions_by_stc/step3.3.png" alt="Step 2 - DNS Management" />
                       </div>
                       <div className="step-image">
-                        <img src="/step3.3.b.png" alt="Step 2 - DNS Management continued" />
+                        <img src="/DNS_Solutions_by_stc/step3.3.b.png" alt="Step 2 - DNS Management continued" />
                       </div>
                       <div className="step-image">
-                        <img src="/step3.3.c.png" alt="Step 2 - DNS Management final" />
+                        <img src="/DNS_Solutions_by_stc/step3.3.c.png" alt="Step 2 - DNS Management final" />
                       </div>
                     </div>
 
@@ -591,7 +591,7 @@ export default function UserGuidePage() {
                         domain security.
                       </p>
                       <div className="step-image">
-                        <img src="/step3.4.png" alt="Step 3 - Security Settings" />
+                        <img src="/DNS_Solutions_by_stc/step3.4.png" alt="Step 3 - Security Settings" />
                       </div>
 
                       <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
@@ -613,7 +613,7 @@ export default function UserGuidePage() {
                       </div>
 
                       <div className="step-image">
-                        <img src="/step3.4.b.png" alt="Step 3 - Security Settings continued" />
+                        <img src="/DNS_Solutions_by_stc/step3.4.b.png" alt="Step 3 - Security Settings continued" />
                       </div>
 
                       <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
@@ -681,7 +681,7 @@ export default function UserGuidePage() {
                         current registrar. Also ensure that 60 days have passed to transfer out.
                       </p>
                       <div className="step-image">
-                        <img src="/step4.1.png" alt="Step 1 - Prepare for Transfer Out" />
+                        <img src="/DNS_Solutions_by_stc/step4.1.png" alt="Step 1 - Prepare for Transfer Out" />
                       </div>
                     </div>
 
@@ -701,7 +701,7 @@ export default function UserGuidePage() {
                         authorization code.
                       </p>
                       <div className="step-image">
-                        <img src="/step4.2.png" alt="Step 2 - Initiate Transfer In Request" />
+                        <img src="/DNS_Solutions_by_stc/step4.2.png" alt="Step 2 - Initiate Transfer In Request" />
                       </div>
                     </div>
 
@@ -905,7 +905,7 @@ export default function UserGuidePage() {
                         portal using your credentials.
                       </p>
                       <div className="step-image">
-                        <img src="/step6.1.png" alt="Step 1 - Log in to Marketplace and Bluvalt" />
+                        <img src="/DNS_Solutions_by_stc/step6.1.png" alt="Step 1 - Log in to Marketplace and Bluvalt" />
                       </div>
                     </div>
 
@@ -925,7 +925,7 @@ export default function UserGuidePage() {
                         before you can add payment methods or complete domain registration.
                       </p>
                       <div className="step-image">
-                        <img src="/step6.2.png" alt="Step 2 - Activate Your Bluvalt Account" />
+                        <img src="/DNS_Solutions_by_stc/step6.2.png" alt="Step 2 - Activate Your Bluvalt Account" />
                       </div>
                     </div>
 
@@ -945,7 +945,7 @@ export default function UserGuidePage() {
                         renewals, and other services. Ensure your card is valid and has sufficient funds.
                       </p>
                       <div className="step-image">
-                        <img src="/step6.3.png" alt="Step 3 - Add Your Credit Card" />
+                        <img src="/DNS_Solutions_by_stc/step6.3.png" alt="Step 3 - Add Your Credit Card" />
                       </div>
                     </div>
 
@@ -965,7 +965,7 @@ export default function UserGuidePage() {
                         account information in the Bluvalt portal.
                       </p>
                       <div className="step-image">
-                        <img src="/step6.4.png" alt="Step 4 - View Current Payment Methods" />
+                        <img src="/DNS_Solutions_by_stc/step6.4.png" alt="Step 4 - View Current Payment Methods" />
                       </div>
                     </div>
 

@@ -236,7 +236,7 @@ export default function FAQsPage() {
             </div>
 
             <div className="hidden lg:block">
-              <img src={getImagePath("/faq-illustration.png")} alt="FAQ Illustration" className="faq-illustration" />
+              <img src="/DNS_Solutions_by_stc/faq-illustration.png" alt="FAQ Illustration" className="faq-illustration" />
             </div>
           </div>
         </div>

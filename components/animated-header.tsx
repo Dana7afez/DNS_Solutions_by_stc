@@ -12,7 +12,7 @@ export function AnimatedHeader() {
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src={getImagePath("/logo.svg")} alt="Solutions by stc" className="h-8 w-auto" />
+            <img src="/DNS_Solutions_by_stc/logo.svg" alt="Solutions by stc" className="h-8 w-auto" />
           </Link>
 
           {/* Navigation */}
