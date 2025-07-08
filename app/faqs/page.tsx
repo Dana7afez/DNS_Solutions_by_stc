@@ -211,36 +211,33 @@ export default function FAQsPage() {
 
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 text-left">
-            <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
-          </div>
+        <div className="back-button-container">
+          <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
+            <p className="text-xl text-gray-600 mb-8">
+              Find answers to the most common questions about Saudi domain registration and management
+            </p>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Find answers to the most common questions about Saudi domain registration and management
-              </p>
-
-              {/* Enhanced Search Bar with better UX */}
-              <div className="search-container max-w-md mx-auto lg:mx-0">
-                <Search className="search-icon w-6 h-6" />
-                <input type="text" placeholder="Type your question here to search..." className="search-input" />
-              </div>
-              <p className="text-sm text-gray-500 mt-2 text-center lg:text-left">
-                💡 Try searching for "domain registration", "payment", or "DNS"
-              </p>
+            {/* Enhanced Search Bar with better UX */}
+            <div className="search-container max-w-md mx-auto mb-8">
+              <Search className="search-icon w-6 h-6" />
+              <input type="text" placeholder="Type your question here to search..." className="search-input" />
             </div>
+            <p className="text-sm text-gray-500 mb-8">
+              💡 Try searching for "domain registration", "payment", or "DNS"
+            </p>
 
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-full max-w-md lg:max-w-lg">
-                <img 
-                  src="/DNS_Solutions_by_stc/faq-illustration.png" 
-                  alt="FAQ Illustration" 
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+            {/* FAQ Illustration - centered and bigger */}
+            <div className="flex justify-center">
+              <img 
+                src="/DNS_Solutions_by_stc/faq-illustration.png" 
+                alt="FAQ Illustration" 
+                className="faq-illustration"
+              />
             </div>
           </div>
         </div>

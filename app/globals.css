@@ -168,10 +168,26 @@ body {
     80% center / cover no-repeat;
   position: relative;
   overflow: hidden;
-  min-height: 350px;
+  min-height: 400px;
   padding: 4rem 0;
   display: flex;
   align-items: center;
+}
+
+/* Back button positioning - fixed in top-right */
+.hero-gradient .back-button-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+/* Responsive back button */
+@media (max-width: 768px) {
+  .hero-gradient .back-button-container {
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 .hero-gradient::before {
@@ -320,13 +336,22 @@ body {
   max-width: 100%;
 }
 
-/* Make FAQ illustration bigger */
+/* Make FAQ illustration bigger and fit hero gradient */
 .faq-illustration {
   width: 100%;
   height: auto;
-  max-width: 900px; /* Increased from 750px */
+  max-width: 100%;
+  max-height: 280px;
   margin: 0 auto;
   object-fit: contain;
+  display: block;
+}
+
+/* FAQ illustration responsive */
+@media (max-width: 768px) {
+  .faq-illustration {
+    max-height: 200px;
+  }
 }
 
 /* Knowledge base card text alignment - center titles */

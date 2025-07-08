@@ -10,7 +10,7 @@ export default function KnowledgeBasePage() {
 
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="page-title">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Knowledge Base</h1>
             <p className="text-xl text-gray-600 mb-8">Explore Insights, Tips, and Updates</p>
