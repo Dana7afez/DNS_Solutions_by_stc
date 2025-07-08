@@ -7,6 +7,7 @@ import { FAQList } from "@/components/faq-list"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
 import { Search } from "lucide-react"
+import { getImagePath } from "@/lib/assets"
 
 const faqData = {
   registration: [
@@ -235,7 +236,7 @@ export default function FAQsPage() {
             </div>
 
             <div className="hidden lg:block">
-              <img src="/faq-illustration.png" alt="FAQ Illustration" className="faq-illustration" />
+              <img src={getImagePath("/faq-illustration.png")} alt="FAQ Illustration" className="faq-illustration" />
             </div>
           </div>
         </div>

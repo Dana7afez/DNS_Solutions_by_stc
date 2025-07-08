@@ -3,6 +3,7 @@
 import { Globe, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { getImagePath } from "@/lib/assets"
 
 export function AnimatedHeader() {
   return (
@@ -11,7 +12,7 @@ export function AnimatedHeader() {
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Solutions by stc" className="h-8 w-auto" />
+            <img src={getImagePath("/logo.svg")} alt="Solutions by stc" className="h-8 w-auto" />
           </Link>
 
           {/* Navigation */}

@@ -1,32 +1,44 @@
 'use client'
 
 import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function HomePage() {
-  useEffect(() => {
-    // Client-side redirect to knowledge-base
-    const basePath = process.env.NODE_ENV === 'production' ? '/DNS_Solutions_by_stc' : '';
-    window.location.replace(`${basePath}/knowledge-base`);
-  }, []);
+  const router = useRouter()
 
-  // Fallback content while redirecting
+  useEffect(() => {
+    // Redirect to knowledge-base on page load
+    router.replace('/knowledge-base')
+  }, [router])
+
+  // Show a loading state while redirecting
   return (
     <div style={{ 
+      minHeight: '100vh', 
       display: 'flex', 
-      justifyContent: 'center', 
       alignItems: 'center', 
-      height: '100vh',
-      fontFamily: 'Arial, sans-serif',
+      justifyContent: 'center',
+      fontFamily: 'system-ui, sans-serif',
       backgroundColor: '#fff'
     }}>
       <div style={{ textAlign: 'center' }}>
-        <h1>DNS Solutions by STC</h1>
-        <p>Redirecting to Knowledge Base...</p>
-        <noscript>
-          <a href="/knowledge-base" style={{ color: '#0066cc' }}>
-            Click here to continue to Knowledge Base
-          </a>
-        </noscript>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          border: '4px solid #f3f3f3',
+          borderTop: '4px solid #ff375e',
+          borderRadius: '50%',
+          animation: 'spin 1s linear infinite',
+          margin: '0 auto 16px'
+        }}></div>
+        <p style={{ color: '#666', fontSize: '16px' }}>Loading Knowledge Base...</p>
+        <img src="/blog2.1.png" alt="..." />
+        <style>{`
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}</style>
       </div>
     </div>
   )

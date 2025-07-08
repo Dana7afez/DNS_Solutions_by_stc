@@ -4,6 +4,7 @@ import { useState } from "react"
 import { AnimatedHeader } from "@/components/animated-header"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
+import { getImagePath } from "@/lib/assets"
 import {
   PlusCircle,
   BookIcon as AddressBook,
@@ -152,7 +153,7 @@ export default function UserGuidePage() {
                         your account is properly set up before proceeding with domain registration.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.1.png" alt="Step 1 - Login or Register" />
+                        <img src={getImagePath("/step1.1.png")} alt="Step 1 - Login or Register" />
                       </div>
                     </div>
 
@@ -172,7 +173,7 @@ export default function UserGuidePage() {
                         for registration. Consider alternative names if your first choice is already taken.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.2.png" alt="Step 2 - Check Domain Availability" />
+                        <img src={getImagePath("/step1.2.png")} alt="Step 2 - Check Domain Availability" />
                       </div>
                     </div>
 
@@ -195,7 +196,7 @@ export default function UserGuidePage() {
                         registration and renewal services.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.3.png" alt="Step 3 - Activate Payment Account" />
+                        <img src={getImagePath("/step1.3.png")} alt="Step 3 - Activate Payment Account" />
                       </div>
                     </div>
 
@@ -218,7 +219,7 @@ export default function UserGuidePage() {
                         pay or renew the service will result in deactivation of the Saudi domain.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.4.png" alt="Step 4 - Select Duration and Auto Renewal" />
+                        <img src={getImagePath("/step1.4.png")} alt="Step 4 - Select Duration and Auto Renewal" />
                       </div>
                     </div>
 
@@ -243,7 +244,7 @@ export default function UserGuidePage() {
                         <li>All other requirements depend on your entity type</li>
                       </ul>
                       <div className="step-image">
-                        <img src="/step1.5.png" alt="Step 5 - Fill Out Registration Form" />
+                        <img src={getImagePath("/step1.5.png")} alt="Step 5 - Fill Out Registration Form" />
                       </div>
                     </div>
 
@@ -265,7 +266,7 @@ export default function UserGuidePage() {
                         for verification.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.6.png" alt="Step 6 - Nafath Verification" />
+                        <img src={getImagePath("/step1.6.png")} alt="Step 6 - Nafath Verification" />
                       </div>
                     </div>
 
@@ -286,7 +287,7 @@ export default function UserGuidePage() {
                         contacts information" and verify the email and phone number of each contact.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.7.png" alt="Step 7 - Create Contacts" />
+                        <img src={getImagePath("/step1.7.png")} alt="Step 7 - Create Contacts" />
                       </div>
                     </div>
 
