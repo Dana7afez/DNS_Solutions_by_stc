@@ -3,6 +3,18 @@ import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
 import { Calendar, User } from "lucide-react"
 
+// Generate static paths for all available blog IDs
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' },
+    { id: '5' },
+    { id: '6' },
+  ]
+}
+
 const blogContent = {
   2: {
     title: "How to Register a Saudi Domain Name with Solutions by stc",
