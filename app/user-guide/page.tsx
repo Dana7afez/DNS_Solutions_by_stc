@@ -153,7 +153,7 @@ export default function UserGuidePage() {
                         your account is properly set up before proceeding with domain registration.
                       </p>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.1.png")} alt="Step 1 - Login or Register" />
+                        <img src="/DNS_Solutions_by_stc/step1.1.png" alt="Step 1 - Login or Register" />
                       </div>
                     </div>
 
@@ -173,7 +173,7 @@ export default function UserGuidePage() {
                         for registration. Consider alternative names if your first choice is already taken.
                       </p>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.2.png")} alt="Step 2 - Check Domain Availability" />
+                        <img src="/DNS_Solutions_by_stc/step1.2.png" alt="Step 2 - Check Domain Availability" />
                       </div>
                     </div>
 
@@ -196,7 +196,7 @@ export default function UserGuidePage() {
                         registration and renewal services.
                       </p>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.3.png")} alt="Step 3 - Activate Payment Account" />
+                        <img src="/DNS_Solutions_by_stc/step1.3.png" alt="Step 3 - Activate Payment Account" />
                       </div>
                     </div>
 
@@ -219,7 +219,7 @@ export default function UserGuidePage() {
                         pay or renew the service will result in deactivation of the Saudi domain.
                       </p>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.4.png")} alt="Step 4 - Select Duration and Auto Renewal" />
+                        <img src="/DNS_Solutions_by_stc/step1.4.png" alt="Step 4 - Select Duration and Auto Renewal" />
                       </div>
                     </div>
 
@@ -244,7 +244,7 @@ export default function UserGuidePage() {
                         <li>All other requirements depend on your entity type</li>
                       </ul>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.5.png")} alt="Step 5 - Fill Out Registration Form" />
+                        <img src="/DNS_Solutions_by_stc/step1.5.png" alt="Step 5 - Fill Out Registration Form" />
                       </div>
                     </div>
 
@@ -266,7 +266,7 @@ export default function UserGuidePage() {
                         for verification.
                       </p>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.6.png")} alt="Step 6 - Nafath Verification" />
+                        <img src="/DNS_Solutions_by_stc/step1.6.png" alt="Step 6 - Nafath Verification" />
                       </div>
                     </div>
 
@@ -287,7 +287,7 @@ export default function UserGuidePage() {
                         contacts information" and verify the email and phone number of each contact.
                       </p>
                       <div className="step-image">
-                        <img src={getImagePath("/step1.7.png")} alt="Step 7 - Create Contacts" />
+                        <img src="/DNS_Solutions_by_stc/step1.7.png" alt="Step 7 - Create Contacts" />
                       </div>
                     </div>
 
@@ -308,7 +308,7 @@ export default function UserGuidePage() {
                         Applications section.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.8.png" alt="Step 8 - DNS Servers Choice" />
+                        <img src="/DNS_Solutions_by_stc/step1.8.png" alt="Step 8 - DNS Servers Choice" />
                       </div>
                     </div>
 
@@ -328,7 +328,7 @@ export default function UserGuidePage() {
                         registration in the Bluvalt portal. Ensure all information is accurate before final submission.
                       </p>
                       <div className="step-image">
-                        <img src="/step1.9.png" alt="Step 9 - Submit Request" />
+                        <img src="/DNS_Solutions_by_stc/step1.9.png" alt="Step 9 - Submit Request" />
                       </div>
                     </div>
 
@@ -415,7 +415,7 @@ export default function UserGuidePage() {
                         Coordinators Info.
                       </p>
                       <div className="step-image">
-                        <img src="/step2.1.png" alt="Step 1 - Access Contact Management" />
+                        <img src="/DNS_Solutions_by_stc/step2.1.png" alt="Step 1 - Access Contact Management" />
                       </div>
                     </div>
 
@@ -435,7 +435,7 @@ export default function UserGuidePage() {
                         billing contacts for your domain.
                       </p>
                       <div className="step-image">
-                        <img src="/step2.2.png" alt="Step 2 - View Current Contacts" />
+                        <img src="/DNS_Solutions_by_stc/step2.2.png" alt="Step 2 - View Current Contacts" />
                       </div>
                     </div>
 
@@ -455,7 +455,7 @@ export default function UserGuidePage() {
                         accurate and up-to-date.
                       </p>
                       <div className="step-image">
-                        <img src="/step2.3.png" alt="Step 3 - Update Contact Information" />
+                        <img src="/DNS_Solutions_by_stc/step2.3.png" alt="Step 3 - Update Contact Information" />
                       </div>
                     </div>
 
@@ -548,10 +548,10 @@ export default function UserGuidePage() {
                         Name Server. Here you can update the name server records for your domain.
                       </p>
                       <div className="step-image">
-                        <img src="/step3.1.png" alt="Step 1 - Edit Name Server" />
+                        <img src="/DNS_Solutions_by_stc/step3.1.png" alt="Step 1 - Edit Name Server" />
                       </div>
                       <div className="step-image">
-                        <img src="/step3.2.png" alt="Step 1 - Edit Name Server continued" />
+                        <img src="/DNS_Solutions_by_stc/step3.2.png" alt="Step 1 - Edit Name Server continued" />
                       </div>
                     </div>
 

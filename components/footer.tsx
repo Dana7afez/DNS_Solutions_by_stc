@@ -31,7 +31,7 @@ export function Footer() {
             <div className="text-center">
               <p className="text-gray-500 mb-2">Support ticket</p>
               <div className="flex items-center justify-center space-x-3">
-                <img src="/azer-logo.png" alt="Azer Digital Care" className="h-8" />
+                <img src="/DNS_Solutions_by_stc/azer-logo.png" alt="Azer Digital Care" className="h-8" />
                 <div>
                   <div className="text-sm font-medium text-gray-900">azer</div>
                   <div className="text-xs text-gray-500">Digital Care</div>

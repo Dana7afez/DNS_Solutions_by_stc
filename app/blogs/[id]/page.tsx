@@ -23,7 +23,7 @@ const blogContent = {
     title: "How to Register a Saudi Domain Name with Solutions by stc",
     date: "December 10, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog2.png"),
+    image: "/DNS_Solutions_by_stc/blog2.png",
     content: `
       <div class="blog-content">
         <p>If you're ready to build your digital presence in Saudi Arabia, registering a Saudi domain name is one of the first steps. Whether you're launching a business website or a personal brand, Solutions by stc makes the process simple. In this blog, we'll guide you step-by-step through registering a new Saudi domain name using their portal.</p>
@@ -51,37 +51,37 @@ const blogContent = {
 
         <h3>2. Check if the Saudi domain exists</h3>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.1.png")} alt="Check if the Saudi domain exists" />
+          <img src="/DNS_Solutions_by_stc/blog2.1.png" alt="Check if the Saudi domain exists" />
           <p class="blog-figure-caption">Figure 1. Check if the Saudi domain exists</p>
         </div>
 
         <h3>3. Activate your Payment account through Bluvalt Portal</h3>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.2.png")} alt="Activate Payment account through Bluvalt Portal" />
+          <img src="/DNS_Solutions_by_stc/blog2.2.png" alt="Activate Payment account through Bluvalt Portal" />
           <p class="blog-figure-caption">Figure 2. Activate Payment account through Bluvalt Portal</p>
         </div>
 
         <p><strong>After trying to register login to the marketplace and login to bluvalt.</strong></p>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.3.png")} alt="After trying to register login to the marketplace and login to bluvalt" />
+          <img src="/DNS_Solutions_by_stc/blog2.3.png" alt="After trying to register login to the marketplace and login to bluvalt" />
           <p class="blog-figure-caption">Figure 3. After trying to register login to the marketplace and login to bluvalt</p>
         </div>
 
         <p><strong>Activate the account.</strong></p>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.4.png")} alt="Activate the account" />
+          <img src="/DNS_Solutions_by_stc/blog2.4.png" alt="Activate the account" />
           <p class="blog-figure-caption">Figure 4. Activate the account</p>
         </div>
 
         <p><strong>Add your credit card</strong></p>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.5.png")} alt="Add your credit card" />
+          <img src="/DNS_Solutions_by_stc/blog2.5.png" alt="Add your credit card" />
           <p class="blog-figure-caption">Figure 5. Add your credit card</p>
         </div>
 
         <h3>4. Select the duration and the auto renewal feature</h3>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.6.png")} alt="Select the duration and the auto renewal feature" />
+          <img src="/DNS_Solutions_by_stc/blog2.6.png" alt="Select the duration and the auto renewal feature" />
           <p class="blog-figure-caption">Figure 6. Select the duration and the auto renewal feature</p>
         </div>
         <p>Min subscription period is 1 year and Max is 10 years, auto renewal will automatically renew your subscription. The Duration for renewing is 2 weeks, failing to pay or renew the service will result in deactivation for the Saudi domain.</p>
@@ -109,7 +109,7 @@ const blogContent = {
         <h3>9. Submit the Request</h3>
         <p>After filling the form and uploading documents, click submit. And you will be billed for it in the Bluvalt portal.</p>
         <div class="blog-figure">
-          <img src={getImagePath("/blog2.7.png")} alt="Submit the Request" />
+          <img src="/DNS_Solutions_by_stc/blog2.7.png" alt="Submit the Request" />
           <p class="blog-figure-caption">Figure 7. Submit the Request</p>
         </div>
 
@@ -159,13 +159,13 @@ const blogContent = {
     title: "Common Reasons Saudi Domain Registrations Get Rejected",
     date: "November 28, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog4.png"),
+    image: "/DNS_Solutions_by_stc/blog4.png",
     content: `
       <div class="blog-content">
         <p>Registering a Saudi domain name (like .sa or .com.sa) is a critical step for establishing your digital identity in the Kingdom. But while the process is straightforward, many applications get rejected due to simple and avoidable mistakes. Understanding these common reasons can save you time, effort, and missed opportunities. In this blog, we'll walk you through the most frequent causes of rejection and how to avoid them.</p>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog4.1.jpg")} alt="Domain Registration Rejection" />
+          <img src="/DNS_Solutions_by_stc/blog4.1.jpg" alt="Domain Registration Rejection" />
           <p class="blog-figure-caption">Figure 1. Domain Registration Rejection</p>
         </div>
 
@@ -231,7 +231,7 @@ const blogContent = {
     title: "Understanding the Role of SaudiNIC and CST in Domain Registration",
     date: "November 20, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog5.png"),
+    image: "/DNS_Solutions_by_stc/blog5.png",
     content: `
       <div class="blog-content">
         <p>When it comes to registering a .sa domain in Saudi Arabia, two key entities play vital roles in the process: SaudiNIC and the Communications, Space & Technology Commission (CST). Understanding how these organizations function and interact is essential for businesses, individuals, and institutions seeking to establish an official online presence within the Kingdom.</p>
@@ -239,7 +239,7 @@ const blogContent = {
         <p>In this blog, we break down the responsibilities of SaudiNIC and CST, their impact on domain name registration in Saudi Arabia, and why their roles matter for secure and reliable domain management.</p>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog5.1.png")} alt="CST and SaudiNIC Relation" />
+          <img src="/DNS_Solutions_by_stc/blog5.1.png" alt="CST and SaudiNIC Relation" />
           <p class="blog-figure-caption">Figure 1. CST and SaudiNIC Relation</p>
         </div>
 
@@ -280,7 +280,7 @@ const blogContent = {
         <p>Whether you're a Saudi business, a governmental entity, or an international company with operations in the Kingdom, aligning your domain registration with SaudiNIC and CST ensures full legitimacy and access to local digital infrastructure.</p>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog5.2.png")} alt="Saudi Domains Security" />
+          <img src="/DNS_Solutions_by_stc/blog5.2.png" alt="Saudi Domains Security" />
           <p class="blog-figure-caption">Figure 2. Saudi Domains Security</p>
         </div>
 
@@ -295,7 +295,7 @@ const blogContent = {
     title: "How to Link Your Domain to a Website or Hosting Provider in Saudi Arabia",
     date: "November 15, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog6.png"),
+    image: "/DNS_Solutions_by_stc/blog6.png",
     content: `
       <div class="blog-content">
         <p>Linking your .sa domain to a website or hosting provider is a crucial step in establishing your online presence in Saudi Arabia. Whether you're a small Saudi business, a growing startup, or an international company expanding into the Kingdom, the process is straightforward, especially when you use a trusted registrar like Solutions by stc.</p>
@@ -322,7 +322,7 @@ const blogContent = {
           <li>Go to "Dashboard" and click on your .sa domain.</li>
         </ol>
         <div class="blog-figure">
-          <img src={getImagePath("/blog6.1.png")} alt="Go to Dashboard and click on your .sa domain step" />
+          <img src="/DNS_Solutions_by_stc/blog6.1.png" alt="Go to Dashboard and click on your .sa domain step" />
           <p class="blog-figure-caption">Figure 1. Go to "Dashboard" and click on your .sa domain</p>
         </div>
 
@@ -330,7 +330,7 @@ const blogContent = {
           <li>Select "Show all details" to view or edit your records.</li>
         </ol>
         <div class="blog-figure">
-          <img src={getImagePath("/blog6.2.png")} alt="Select Show all details to view or edit your records step" />
+          <img src="/DNS_Solutions_by_stc/blog6.2.png" alt="Select Show all details to view or edit your records step" />
           <p class="blog-figure-caption">Figure 2. Select "Show all details" to view or edit your records</p>
         </div>
 
@@ -387,7 +387,7 @@ const blogContent = {
           <li>Click "Add Record" in Solutions by stc's DNS management.</li>
         </ol>
         <div class="blog-figure">
-          <img src={getImagePath("/blog6.3.png")} alt="Click Add Record in Solutions by STC's DNS management step" />
+          <img src="/DNS_Solutions_by_stc/blog6.3.png" alt="Click Add Record in Solutions by STC's DNS management step" />
           <p class="blog-figure-caption">Figure 3. Click "Add Record" in Solutions by STC's DNS management</p>
         </div>
 
@@ -425,7 +425,7 @@ const blogContent = {
     title: "What is a Domain Name and How Does It Work?",
     date: "December 15, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog1.png"),
+    image: "/DNS_Solutions_by_stc/blog1.png",
     content: `
       <div class="blog-content">
         <p>In today's digital age, almost everything starts with a website. Whether you're building an online store, creating a personal portfolio, or launching a business, your journey begins with a domain name. But what exactly is a domain name, and how does it work behind the scenes? This blog will break it down for you.</p>
@@ -434,7 +434,7 @@ const blogContent = {
         <p>The domain name is the unique address you type into a browser to visit a website like google.com or stc.com.sa. It's a human-friendly version of a website's actual location on the internet, which is defined by an IP address—a string of numbers like 192.168.1.1.</p>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog1.1.png")} alt="Domain Name Representation" />
+          <img src="/DNS_Solutions_by_stc/blog1.1.png" alt="Domain Name Representation" />
           <p class="blog-figure-caption">Figure 1. Domain Name Representation</p>
         </div>
 
@@ -465,7 +465,7 @@ const blogContent = {
         </ol>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog1.2.png")} alt="Process for Domain Name Search" />
+          <img src="/DNS_Solutions_by_stc/blog1.2.png" alt="Process for Domain Name Search" />
           <p class="blog-figure-caption">Figure 2. Process for Domain Name Search</p>
         </div>
 
@@ -490,7 +490,7 @@ const blogContent = {
     title: "Eligibility Criteria for Saudi Domains",
     date: "December 5, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog3.png"),
+    image: "/DNS_Solutions_by_stc/blog3.png",
     content: `
       <div class="blog-content">
         <p>2LD or 3LD Domain names may be registered within the Saudi Latin ccTLD according to the following:</p>
@@ -535,13 +535,13 @@ const blogContent = {
     title: "How to Secure Your Domain Name from Hijacking and Abuse",
     date: "November 10, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog7.png"),
+    image: "/DNS_Solutions_by_stc/blog7.png",
     content: `
       <div class="blog-content">
         <p>Your domain name is one of your most valuable digital assets. If hijacked or misused, it could damage your brand, affect customer trust, and disrupt your business. In this blog, we cover the 11 best practices to protect your domain — all clearly illustrated in the figure below.</p>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog7.1.png")} alt="Best practices to secure a domain name" />
+          <img src="/DNS_Solutions_by_stc/blog7.1.png" alt="Best practices to secure a domain name" />
           <p class="blog-figure-caption">Figure 1. Best practices to secure a domain name</p>
         </div>
 
@@ -623,13 +623,13 @@ const blogContent = {
     title: "How to Choose the Best Domain Name for Your Business",
     date: "November 5, 2024",
     author: "Solutions by stc Team",
-    image: getImagePath("/blog8.png"),
+    image: "/DNS_Solutions_by_stc/blog8.png",
     content: `
       <div class="blog-content">
         <p>Your domain name is your digital identity — the first impression users and search engines get about your brand. Choosing the right domain name is a crucial step toward building trust, improving SEO, and growing your business online.</p>
 
         <div class="blog-figure">
-          <img src={getImagePath("/blog8.1.png")} alt="Tips for choosing an effective domain name" />
+          <img src="/DNS_Solutions_by_stc/blog8.1.png" alt="Tips for choosing an effective domain name" />
           <p class="blog-figure-caption">Figure 1. Tips for choosing an effective domain name</p>
         </div>
 
@@ -682,7 +682,7 @@ const blogContent = {
 
 // Function to get correct image path for GitHub Pages
 function getImagePath(path: string): string {
-  const basePath = '/solutions_by_stc'
+  const basePath = '/DNS_Solutions_by_stc'
   return process.env.NODE_ENV === 'production' ? `${basePath}${path}` : path
 }
 

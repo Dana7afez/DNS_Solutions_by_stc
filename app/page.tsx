@@ -32,7 +32,7 @@ export default function HomePage() {
           margin: '0 auto 16px'
         }}></div>
         <p style={{ color: '#666', fontSize: '16px' }}>Loading Knowledge Base...</p>
-        <img src="/blog2.1.png" alt="..." />
+        <img src="/DNS_Solutions_by_stc/blog2.1.png" alt="..." />
         <style>{`
           @keyframes spin {
             0% { transform: rotate(0deg); }
