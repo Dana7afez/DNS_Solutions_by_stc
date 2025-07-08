@@ -25,17 +25,29 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          if [ -f "pnpm-lock.yaml" ]; then
+            npm install -g pnpm
+            pnpm install
+          else
+            npm install
+          fi
+
+      - name: Build with Next.js
+        run: |
+          if [ -f "pnpm-lock.yaml" ]; then
+            pnpm run build
+          else
+            npm run build
+          fi
+        env:
+          NODE_ENV: production
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build with Next.js
-        run: npm run build
-        env:
-          NODE_ENV: production
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
