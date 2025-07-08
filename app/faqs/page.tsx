@@ -219,8 +219,8 @@ export default function FAQsPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-gray-900">
               <div className="page-title">
-                <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
-                <p className="text-xl mb-8 text-gray-600">
+                <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
+                <p className="text-xl text-gray-600 mb-8">
                   Find answers to the most common questions about Saudi domain registration and management
                 </p>
               </div>

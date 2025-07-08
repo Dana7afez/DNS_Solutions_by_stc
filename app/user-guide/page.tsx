@@ -68,14 +68,14 @@ export default function UserGuidePage() {
     <div className="min-h-screen bg-gray-50">
       <AnimatedHeader />
 
-      {/* Hero Section */}
-      <div className="hero-gradient py-16">
+      {/* Hero Section - Consistent styling */}
+      <div className="hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-6">
+          <div className="mb-6 text-left">
             <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
           </div>
 
-          <div className="text-center">
+          <div className="page-title">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">User Guide</h1>
             <p className="text-xl text-gray-600 mb-8">
               Step-by-step instructions for domain registration and management
