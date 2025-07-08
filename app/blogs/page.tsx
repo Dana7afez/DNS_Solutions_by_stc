@@ -10,7 +10,7 @@ const blogs = [
     title: "What is a Domain Name and How Does It Work?",
     excerpt:
       "In today's digital age, almost everything starts with a website. Whether you're building an online store, creating a personal portfolio, or launching a business, your journey begins with a domain name.",
-    image: "/blog1.png",
+    image: "/DNS_Solutions_by_stc/blog1.png",
     date: "December 15, 2024",
     author: "Solutions by stc Team",
   },
@@ -19,7 +19,7 @@ const blogs = [
     title: "How to Register a Saudi Domain Name with Solutions by stc",
     excerpt:
       "If you're ready to build your digital presence in Saudi Arabia, registering a Saudi domain name is one of the first steps. Solutions by stc makes the process simple.",
-    image: "/blog2.png",
+    image: "/DNS_Solutions_by_stc/blog2.png",
     date: "December 10, 2024",
     author: "Solutions by stc Team",
   },
@@ -28,7 +28,7 @@ const blogs = [
     title: "Eligibility Criteria for Saudi Domains",
     excerpt:
       "2LD or 3LD Domain names may be registered within the Saudi Latin ccTLD according to specific eligibility requirements for each domain extension.",
-    image: "/blog3.png",
+    image: "/DNS_Solutions_by_stc/blog3.png",
     date: "December 5, 2024",
     author: "Solutions by stc Team",
   },
@@ -37,7 +37,7 @@ const blogs = [
     title: "Common Reasons Saudi Domain Registrations Get Rejected",
     excerpt:
       "Understanding the most frequent causes of rejection can save you time, effort, and missed opportunities when registering your Saudi domain.",
-    image: "/blog4.png",
+    image: "/DNS_Solutions_by_stc/blog4.png",
     date: "November 28, 2024",
     author: "Solutions by stc Team",
   },
@@ -46,7 +46,7 @@ const blogs = [
     title: "Understanding the Role of SaudiNIC and CST in Domain Registration",
     excerpt:
       "Learn about the key entities that play vital roles in .sa domain registration and their impact on domain management in Saudi Arabia.",
-    image: "/blog5.png",
+    image: "/DNS_Solutions_by_stc/blog5.png",
     date: "November 20, 2024",
     author: "Solutions by stc Team",
   },
@@ -55,7 +55,7 @@ const blogs = [
     title: "How to Link Your Domain to a Website or Hosting Provider in Saudi Arabia",
     excerpt:
       "A comprehensive guide to linking your .sa domain to a website or hosting provider for establishing your online presence in Saudi Arabia.",
-    image: "/blog6.png",
+    image: "/DNS_Solutions_by_stc/blog6.png",
     date: "November 15, 2024",
     author: "Solutions by stc Team",
   },
@@ -64,7 +64,7 @@ const blogs = [
     title: "How to Secure Your Domain Name from Hijacking and Abuse",
     excerpt:
       "Your domain name is one of your most valuable digital assets. Learn the 11 best practices to protect your domain from hijacking and misuse.",
-    image: "/blog7.png",
+    image: "/DNS_Solutions_by_stc/blog7.png",
     date: "November 10, 2024",
     author: "Solutions by stc Team",
   },
@@ -73,7 +73,7 @@ const blogs = [
     title: "How to Choose the Best Domain Name for Your Business",
     excerpt:
       "Your domain name is your digital identity. Learn how to choose the right domain name that builds trust, improves SEO, and grows your business online.",
-    image: "/blog8.png",
+    image: "/DNS_Solutions_by_stc/blog8.png",
     date: "November 5, 2024",
     author: "Solutions by stc Team",
   },

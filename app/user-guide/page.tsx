@@ -4,7 +4,6 @@ import { useState } from "react"
 import { AnimatedHeader } from "@/components/animated-header"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
-import { getImagePath } from "@/lib/assets"
 import {
   PlusCircle,
   BookIcon as AddressBook,
