@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "deploy": "next build && robocopy out . /MIR /XD node_modules .next .git /XF package*.json *.md *.config.* *.json"
+    "export": "next build && xcopy /E /I /Y out\\* .\\"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
