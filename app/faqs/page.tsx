@@ -211,12 +211,12 @@ export default function FAQsPage() {
 
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
-        <div className="back-button-container">
-          <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-6 text-left">
+            <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
+          </div>
+
+          <div className="page-title">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
             <p className="text-xl text-gray-600 mb-8">
               Find answers to the most common questions about Saudi domain registration and management
@@ -230,15 +230,17 @@ export default function FAQsPage() {
             <p className="text-sm text-gray-500 mb-8">
               💡 Try searching for "domain registration", "payment", or "DNS"
             </p>
+          </div>
+        </div>
 
-            {/* FAQ Illustration - centered and bigger */}
-            <div className="flex justify-center">
-              <img 
-                src="/DNS_Solutions_by_stc/faq-illustration.png" 
-                alt="FAQ Illustration" 
-                className="faq-illustration"
-              />
-            </div>
+        {/* FAQ Illustration - separate from content for better sizing */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <img 
+              src="/DNS_Solutions_by_stc/faq-illustration.png" 
+              alt="FAQ Illustration" 
+              className="faq-illustration"
+            />
           </div>
         </div>
       </div>
