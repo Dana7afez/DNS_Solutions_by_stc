@@ -27,7 +27,7 @@ export function getImagePath(path: string): string {
  */
 export function fixImagePaths(htmlContent: string): string {
   if (process.env.NODE_ENV === 'production') {
-    return htmlContent.replace(/src="\/([^"]+)"/g, 'src="/solutions_by_stc/$1"')
+    return htmlContent.replace(/src="\/([^"]+)"/g, 'src="/DNS_Solutions_by_stc/$1"')
   }
   return htmlContent
 }

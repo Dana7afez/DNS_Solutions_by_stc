@@ -690,7 +690,7 @@ function getImagePath(path: string): string {
 function fixImagePaths(htmlContent: string): string {
   // In production, add the basePath prefix to image paths
   if (process.env.NODE_ENV === 'production') {
-    return htmlContent.replace(/src="\/([^"]+)"/g, 'src="/solutions_by_stc/$1"')
+    return htmlContent.replace(/src="\/([^"]+)"/g, 'src="/DNS_Solutions_by_stc/$1"')
   }
   // In development, use paths as-is
   return htmlContent
