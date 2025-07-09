@@ -608,18 +608,15 @@ export default function UserGuidePage() {
                             <strong>Digest Type:</strong> This indicates the type of cryptographic hash function used to
                             create the digest of the DNSKEY record (e.g., SHA-256, SHA-384).
                           </li>
+                          <li>
+                            <strong>Digest:</strong> This is the cryptographic hash (fingerprint) of the DNSKEY record.
+                            It's used by the parent zone to verify the authenticity of the child zone's key.
+                          </li>
                         </ul>
                       </div>
 
                       <div className="step-image">
                         <img src="/DNS_Solutions_by_stc/step3.4.b.png" alt="Step 3 - Security Settings continued" />
-                      </div>
-
-                      <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                        <p className="text-sm text-blue-800">
-                          <strong>Digest:</strong> This is the cryptographic hash (fingerprint) of the DNSKEY record.
-                          It's used by the parent zone to verify the authenticity of the child zone's key.
-                        </p>
                       </div>
                     </div>
 
