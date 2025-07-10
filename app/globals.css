@@ -367,9 +367,8 @@ body {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 30%, #dee2e6 60%, #f5f7fa 100%);
   position: relative;
   overflow: hidden;
-  height: 60vh;
-  min-height: 500px;
-  max-height: 600px;
+  min-height: 50vh;
+  max-height: 50vh;
   padding-top: 90px;
   padding-bottom: 3rem;
   display: flex;
@@ -836,9 +835,8 @@ body {
 /* Hero section responsive - maintain consistent height across all pages */
 @media (max-width: 768px) {
   .hero-gradient {
-    height: 55vh;
-    min-height: 450px;
-    max-height: 500px;
+    min-height: 45vh;
+    max-height: 45vh;
     padding-top: 80px;
     padding-bottom: 2rem;
   }
@@ -846,9 +844,8 @@ body {
 
 @media (max-width: 480px) {
   .hero-gradient {
-    height: 50vh;
-    min-height: 400px;
-    max-height: 450px;
+    min-height: 40vh;
+    max-height: 40vh;
     padding-top: 75px;
     padding-bottom: 1.5rem;
   }
@@ -856,9 +853,8 @@ body {
 
 @media (max-width: 360px) {
   .hero-gradient {
-    height: 45vh;
-    min-height: 350px;
-    max-height: 400px;
+    min-height: 35vh;
+    max-height: 35vh;
     padding-top: 70px;
     padding-bottom: 1rem;
   }
