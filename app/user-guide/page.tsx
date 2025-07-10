@@ -70,11 +70,11 @@ export default function UserGuidePage() {
 
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 text-left">
-            <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
-          </div>
+        <div className="hero-back-button">
+          <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
+        </div>
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="page-title">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">User Guide</h1>
             <p className="text-xl text-gray-600 mb-8">

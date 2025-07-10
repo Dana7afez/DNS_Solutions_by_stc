@@ -6,7 +6,6 @@ import { CategorySelector } from "@/components/category-selector"
 import { FAQList } from "@/components/faq-list"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
-import { Search } from "lucide-react"
 import { getImagePath } from "@/lib/assets"
 
 const faqData = {
@@ -211,24 +210,15 @@ export default function FAQsPage() {
 
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 text-left">
-            <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
-          </div>
+        <div className="hero-back-button">
+          <BackButton href="/knowledge-base" text="Back to Knowledge Base" />
+        </div>
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="page-title">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h1>
             <p className="text-xl text-gray-600 mb-8">
               Find answers to the most common questions about Saudi domain registration and management
-            </p>
-
-            {/* Enhanced Search Bar with better UX */}
-            <div className="search-container max-w-md mx-auto mb-8">
-              <Search className="search-icon w-6 h-6" />
-              <input type="text" placeholder="Type your question here to search..." className="search-input" />
-            </div>
-            <p className="text-sm text-gray-500 mb-8">
-              💡 Try searching for "domain registration", "payment", or "DNS"
             </p>
           </div>
         </div>

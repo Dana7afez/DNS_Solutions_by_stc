@@ -716,11 +716,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-6 text-left">
-            <BackButton href="/blogs" text="Back to Blogs" />
-          </div>
+        <div className="hero-back-button">
+          <BackButton href="/blogs" text="Back to Blogs" />
+        </div>
 
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="page-title">
             <h1 className="text-4xl font-bold text-gray-900 mb-6">{blog.title}</h1>
             <div className="flex items-center justify-center space-x-6 text-gray-600">
