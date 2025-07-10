@@ -1,6 +1,6 @@
 # DNS Solutions by stc - Complete Website
 
-A modern, comprehensive website for DNS Solutions by stc featuring FAQs, User Guides, Knowledge Base, and Blogs with professional design and enhanced user experience.
+A modern, comprehensive website for Solutions by stc featuring FAQs, User Guides, Knowledge Base, and Blogs with professional design and enhanced user experience.
 
 ## 🚀 Live Demo
 
@@ -215,6 +215,38 @@ The project follows the DNS Solutions by stc design system:
 - Technical articles and tutorials
 - Industry insights and tips
 
+## 🌐 Pages Overview
+
+### 🏠 **Home/Landing**
+- Main navigation hub
+- Professional hero section
+- Quick access to all sections
+
+### ❓ **FAQ Section** (`/faqs`)
+- **Registration:** Domain registration questions
+- **Billing:** Payment and subscription queries  
+- **Technical:** DNS and technical support
+- **Transfer:** Domain transfer procedures
+- **Restore:** Domain restoration process
+
+### 📖 **User Guide** (`/user-guide`)
+- **Register New Domain:** Complete registration walkthrough
+- **Contacts:** Contact management instructions
+- **Domain Actions:** DNS management and actions
+- **Domain Transfer:** Transfer procedures
+- **Domain Restore:** Restoration guidelines  
+- **Payment Information:** Payment setup and management
+
+### 🎓 **Knowledge Base** (`/knowledge-base`)
+- Comprehensive documentation
+- Best practices and tutorials
+- Advanced topics and troubleshooting
+
+### 📝 **Blog Section** (`/blogs`)
+- Latest news and updates
+- Technical articles and tutorials
+- Industry insights and tips
+
 ## 📱 Responsive Design
 
 - **Mobile First:** Optimized for mobile devices with touch-friendly interfaces
@@ -250,48 +282,24 @@ const nextConfig = {
 
 ## 🚀 Performance & SEO
 
-- ✅ **Lighthouse Score:** 95+ on all metrics
-- ✅ **Core Web Vitals:** Optimized for Google's ranking factors
-- ✅ **Static Generation:** Fast loading times
-- ✅ **Image Optimization:** Proper sizing and formats
-- ✅ **Semantic HTML:** Accessible and SEO-friendly markup
-- ✅ **Meta Tags:** Proper title, description, and Open Graph tags
+- ✅ **Static Site Generation (SSG)** for optimal performance
+- ✅ **GitHub Pages compatibility** with proper asset paths
+- ✅ **TypeScript** for type safety and better development experience
+- ✅ **Responsive design** optimized for all devices
+- ✅ **SEO-friendly** markup and meta tags
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -m 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
-
-### Development Guidelines
-- Follow TypeScript best practices
-- Use Tailwind CSS for styling
-- Maintain consistent component structure
-- Test on multiple devices and browsers
-- Keep accessibility in mind
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project was developed to enhance the Solutions by stc domain services website.
 
 ## 📞 Support
 
-For support and questions:
-- **Email:** support@solutions.com.sa
+For Solutions by stc domain services:
 - **Website:** [https://domains.solutions.com.sa](https://domains.solutions.com.sa)
-- **Documentation:** Available in the Knowledge Base section
-
-## 🔄 Recent Updates
-
-- ✅ **Enhanced Navigation:** Improved header with dropdowns and mobile menu
-- ✅ **Unified Design:** Consistent hero sections and button styling
-- ✅ **Content Expansion:** Added comprehensive user guides and knowledge base
-- ✅ **Performance Optimization:** Improved loading times and responsiveness
-- ✅ **Accessibility Improvements:** Better screen reader support and keyboard navigation
 
 ---
 
-Built with ❤️ for DNS Solutions by stc | Empowering domain management in Saudi Arabia
+Built with ❤️ for Solutions by stc | Enhancing domain management experience
+
 
