@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { AnimatedHeader } from "@/components/animated-header"
 import { CategorySelector } from "@/components/category-selector"
 import { FAQList } from "@/components/faq-list"
 import { Footer } from "@/components/footer"
@@ -206,8 +205,6 @@ export default function FAQsPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <AnimatedHeader />
-
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
         <div className="hero-back-button">

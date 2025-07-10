@@ -1,4 +1,3 @@
-import { AnimatedHeader } from "@/components/animated-header"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
 import { Calendar, User } from "lucide-react"

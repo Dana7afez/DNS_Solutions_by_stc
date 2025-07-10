@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { AnimatedHeader } from "@/components/animated-header"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
 import {
@@ -66,8 +65,6 @@ export default function UserGuidePage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <AnimatedHeader />
-
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
         <div className="hero-back-button">

@@ -2,100 +2,110 @@
 
 import { Globe, ChevronDown } from "lucide-react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+import { useState } from "react"
 
 export function Header() {
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+
+  const handleDropdownToggle = (dropdown: string) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown)
+  }
+
   return (
-    <header className="header fixed top-0 w-full z-[600] left-0">
+    <header className="header">
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between navbar-custom">
+        <div className="container">
+          <div className="flex items-center justify-between w-full navbar-custom">
             {/* Logo */}
-            <Link href="/" className="navbar-brand flex items-center">
-              <img src="/logo.svg" alt="Solutions by stc" className="brand h-8 w-auto" />
+            <Link href="/" className="navbar-brand">
+              <img src="logo.svg" alt="Solutions by stc" className="brand" />
             </Link>
 
             {/* Navigation */}
             <div className="collapse navbar-collapse hidden lg:flex">
-              <ul className="navbar-nav mx-auto flex items-center space-x-0">
+              <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
                   <button 
                     type="button" 
-                    className="nav-link font-weight-500 flex items-center gap-1 px-6 py-4 text-gray-600 hover:text-purple-600 transition-colors duration-300"
+                    className="nav-link font-weight-500"
+                    onClick={() => handleDropdownToggle('domains')}
                   >
-                    <span>Domains</span>
-                    <ChevronDown className="w-4 h-4" />
+                    <span>Domains <ChevronDown className="inline w-4 h-4 ml-1" /></span>
                   </button>
+                  {activeDropdown === 'domains' && (
+                    <div className="dropdown-menu">
+                      <Link href="/domains" className="dropdown-item">Domain Registration</Link>
+                      <Link href="/transfer" className="dropdown-item">Domain Transfer</Link>
+                      <Link href="/management" className="dropdown-item">Domain Management</Link>
+                    </div>
+                  )}
                 </li>
                 <li className="nav-item">
-                  <Link href="/features" className="nav-link font-weight-500 px-6 py-4 text-gray-600 hover:text-purple-600 transition-colors duration-300">
+                  <Link href="/features" className="nav-link font-weight-500">
                     Features
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/pricing" className="nav-link font-weight-500 px-6 py-4 text-gray-600 hover:text-purple-600 transition-colors duration-300">
+                  <Link href="/pricing" className="nav-link font-weight-500">
                     Pricing
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/additional-services" className="nav-link font-weight-500 px-6 py-4 text-gray-600 hover:text-purple-600 transition-colors duration-300">
+                  <Link href="/additional-services" className="nav-link font-weight-500">
                     Additional Services
                   </Link>
                 </li>
                 <li className="nav-item">
                   <button 
                     type="button" 
-                    className="nav-link font-weight-500 flex items-center gap-1 px-6 py-4 text-gray-600 hover:text-purple-600 transition-colors duration-300"
+                    className="nav-link font-weight-500"
+                    onClick={() => handleDropdownToggle('support')}
                   >
-                    <span>Support</span>
-                    <ChevronDown className="w-4 h-4" />
+                    <span>Support <ChevronDown className="inline w-4 h-4 ml-1" /></span>
                   </button>
+                  {activeDropdown === 'support' && (
+                    <div className="dropdown-menu">
+                      <Link href="/faqs" className="dropdown-item">FAQs</Link>
+                      <Link href="/user-guide" className="dropdown-item">User Guide</Link>
+                      <Link href="/knowledge-base" className="dropdown-item">Knowledge Base</Link>
+                      <Link href="/blogs" className="dropdown-item">Blog</Link>
+                    </div>
+                  )}
                 </li>
               </ul>
               
               {/* Language Switch for Desktop */}
-              <button className="switch-lang-btn hidden xl:flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-purple-600 transition-colors duration-300">
-                <Globe className="w-4 h-4" />
+              <button className="switch-lang-btn hidden xl:flex">
+                <Globe className="icon icon-globe w-4 h-4" />
                 <span>العربية</span>
               </button>
             </div>
 
             {/* User Area */}
-            <div className="user-area flex items-center space-x-2">
+            <div className="user-area">
               {/* Language Switch for Mobile/Tablet */}
-              <button className="switch-lang-btn xl:hidden flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-purple-600 transition-colors duration-300">
+              <button className="switch-lang-btn xl:hidden">
                 <span>العربية</span>
-                <Globe className="w-4 h-4" />
+                <Globe className="icon-globe w-4 h-4" />
               </button>
               
               <button 
                 type="button" 
-                className="btn btn-secondary-link mx-2 login px-4 py-2 text-gray-600 hover:text-purple-600 transition-colors duration-300 font-medium"
+                className="btn btn-secondary-link mx-2 login"
               >
                 Login
               </button>
               
               <Link 
-                href="/register" 
-                className="btn btn-outline-primary register px-6 py-2 border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white rounded-md font-medium transition-all duration-300"
+                href="https://cloud.bluvalt.com/#/register" 
+                className="btn btn-outline-primary register"
               >
                 Register
               </Link>
               
               {/* Mobile Menu Toggle */}
-              <button type="button" className="navbar-toggler lg:hidden ml-2">
-                <span className="navbar-toggler-icon">
-                  <div className="w-6 h-0.5 bg-gray-600 mb-1"></div>
-                  <div className="w-6 h-0.5 bg-gray-600 mb-1"></div>
-                  <div className="w-6 h-0.5 bg-gray-600"></div>
-                </span>
+              <button type="button" className="navbar-toggler lg:hidden">
+                <span className="navbar-toggler-icon"></span>
               </button>
             </div>
           </div>

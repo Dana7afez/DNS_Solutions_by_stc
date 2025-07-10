@@ -1,4 +1,3 @@
-import { AnimatedHeader } from "@/components/animated-header"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
 import Link from "next/link"
@@ -82,8 +81,6 @@ const blogs = [
 export default function BlogsPage() {
   return (
     <div className="min-h-screen bg-white">
-      <AnimatedHeader />
-
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
         <div className="hero-back-button">

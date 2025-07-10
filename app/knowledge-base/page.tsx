@@ -1,4 +1,3 @@
-import { AnimatedHeader } from "@/components/animated-header"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
 import { BookOpen, HelpCircle, FileText } from "lucide-react"
@@ -6,8 +5,6 @@ import { BookOpen, HelpCircle, FileText } from "lucide-react"
 export default function KnowledgeBasePage() {
   return (
     <div className="min-h-screen bg-white">
-      <AnimatedHeader />
-
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
