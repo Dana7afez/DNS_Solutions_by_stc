@@ -5,7 +5,6 @@ import { CategorySelector } from "@/components/category-selector"
 import { FAQList } from "@/components/faq-list"
 import { Footer } from "@/components/footer"
 import { BackButton } from "@/components/back-button"
-import { getImagePath } from "@/lib/assets"
 
 const faqData = {
   registration: [

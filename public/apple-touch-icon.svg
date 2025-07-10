@@ -1,8 +1,0 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- White background with rounded corners -->
-  <rect width="180" height="180" rx="20" fill="#ffffff"/>
-  <!-- Main purple diamond rotated 45 degrees -->
-  <path d="M90 20L160 90L90 160L20 90L90 20Z" fill="#4f018c"/>
-  <!-- Pink/red square positioned in bottom-right area of the diamond -->
-  <path d="M90 90L140 90L140 140L90 140L90 90Z" fill="#ff375e"/>
-</svg>

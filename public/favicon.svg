@@ -1,6 +1,0 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Main purple diamond rotated 45 degrees -->
-  <path d="M16 2L28 16L16 30L4 16L16 2Z" fill="#4f018c"/>
-  <!-- Pink/red square positioned in bottom-right area of the diamond -->
-  <path d="M16 16L24 16L24 24L16 24L16 16Z" fill="#ff375e"/>
-</svg>
