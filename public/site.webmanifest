@@ -1,0 +1,26 @@
+{
+  "name": "DNS Solutions by STC",
+  "short_name": "DNS Solutions",
+  "description": "Comprehensive DNS and domain management solutions and knowledge base",
+  "start_url": "/DNS_Solutions_by_stc/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f018c",
+  "icons": [
+    {
+      "src": "/DNS_Solutions_by_stc/favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/DNS_Solutions_by_stc/favicon-32x32.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/DNS_Solutions_by_stc/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}
