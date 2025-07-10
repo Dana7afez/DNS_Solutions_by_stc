@@ -28,7 +28,7 @@ export function Header() {
             </Link>
 
             {/* Navigation */}
-            <div className={`collapse navbar-collapse ${mobileMenuOpen ? 'show' : 'hidden'} lg:flex`}>
+            <div className="hidden lg:flex">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
                   <button 
