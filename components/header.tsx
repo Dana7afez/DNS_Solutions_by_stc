@@ -3,7 +3,6 @@
 import { Globe, ChevronDown, Menu } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
-import { getAssetPath } from "@/lib/assets"
 
 export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -26,7 +25,7 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="navbar-brand" onClick={closeMobileMenu}>
               <img 
-                src={getAssetPath("/logo.svg")} 
+                src="/DNS_Solutions_by_stc/logo.svg" 
                 alt="Solutions by stc" 
                 className="brand"
               />
@@ -89,18 +88,12 @@ export function Header() {
                   )}
                 </li>
               </ul>
-              
-              {/* Language Switch for Desktop */}
-              <button className="switch-lang-btn hidden xl:flex">
-                <Globe className="icon icon-globe w-4 h-4" />
-                <span>العربية</span>
-              </button>
             </div>
 
             {/* User Area */}
             <div className="user-area">
-              {/* Language Switch for Mobile/Tablet */}
-              <button className="switch-lang-btn xl:hidden">
+              {/* Language Switch */}
+              <button className="switch-lang-btn">
                 <span>العربية</span>
                 <Globe className="icon-globe w-4 h-4" />
               </button>

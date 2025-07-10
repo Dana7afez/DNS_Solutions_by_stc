@@ -116,7 +116,7 @@ body {
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #6c757d;
+  color: var(--color-info);
   transition: all 0.3s ease;
   padding: 0.75rem 0.75rem;
   border-bottom: 3px solid transparent;
@@ -124,9 +124,9 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--color-info);
+  color: #6c757d;
   background-color: rgba(248, 249, 250, 0.8);
-  border-bottom-color: var(--color-info);
+  border-bottom-color: #6c757d;
 }
 
 .font-weight-500 {
@@ -142,14 +142,14 @@ body {
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #6c757d;
+  color: var(--color-info);
   transition: all 0.3s ease;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
 }
 
 .switch-lang-btn:hover {
-  color: var(--color-info);
+  color: #6c757d;
   background-color: rgba(79, 1, 140, 0.05);
 }
 
@@ -175,13 +175,13 @@ body {
 
 .btn-secondary-link {
   background: none;
-  color: #6c757d;
+  color: var(--color-info);
   border: none;
   padding: 0.5rem 1rem;
 }
 
 .btn-secondary-link:hover {
-  color: var(--color-info);
+  color: #6c757d;
   background-color: rgba(79, 1, 140, 0.05);
 }
 
@@ -249,7 +249,7 @@ body {
 }
 
 .nav-item:hover {
-  color: var(--color-info);
+  color: #6c757d;
   background-color: rgba(248, 249, 250, 0.8);
 }
 
