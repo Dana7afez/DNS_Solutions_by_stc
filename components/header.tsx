@@ -3,6 +3,7 @@
 import { Globe, ChevronDown, Menu } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import { getAssetPath } from "@/lib/assets"
 
 export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -24,12 +25,16 @@ export function Header() {
           <div className="flex items-center justify-between w-full navbar-custom">
             {/* Logo */}
             <Link href="/" className="navbar-brand" onClick={closeMobileMenu}>
-              <img src="/DNS_Solutions_by_stc/logo.svg" alt="Solutions by stc" className="brand" />
+              <img 
+                src={getAssetPath("/logo.svg")} 
+                alt="Solutions by stc" 
+                className="brand"
+              />
             </Link>
 
             {/* Navigation */}
-            <div className="hidden lg:flex">
-              <ul className="navbar-nav mx-auto">
+            <div className="hidden lg:flex flex-1 justify-center">
+              <ul className="navbar-nav">
                 <li className="nav-item">
                   <button 
                     type="button" 
@@ -102,7 +107,7 @@ export function Header() {
               
               <Link 
                 href="/login" 
-                className="btn btn-secondary-link mx-2 login"
+                className="btn btn-secondary-link login"
               >
                 Login
               </Link>
