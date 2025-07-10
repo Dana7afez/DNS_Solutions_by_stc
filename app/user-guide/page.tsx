@@ -115,13 +115,7 @@ export default function UserGuidePage() {
             <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
               {activeSection === "register" && (
                 <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div
-                      className="step-number"
-                      style={{ background: `linear-gradient(135deg, ${activeTopic?.color}, #ff375e)` }}
-                    >
-                      <PlusCircle className="w-6 h-6" />
-                    </div>
+                  <div className="mb-8">
                     <div>
                       <h1 className="text-3xl font-bold text-gray-900">Register New Domain</h1>
                       <p className="text-gray-600 mt-2">
@@ -377,13 +371,7 @@ export default function UserGuidePage() {
 
               {activeSection === "contacts" && (
                 <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div
-                      className="step-number"
-                      style={{ background: `linear-gradient(135deg, ${activeTopic?.color}, #ff375e)` }}
-                    >
-                      <AddressBook className="w-6 h-6" />
-                    </div>
+                  <div className="mb-8">
                     <div>
                       <h1 className="text-3xl font-bold text-gray-900">Contacts</h1>
                       <p className="text-gray-600 mt-2">
@@ -514,13 +502,7 @@ export default function UserGuidePage() {
               {/* Domain Actions */}
               {activeSection === "actions" && (
                 <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div
-                      className="step-number"
-                      style={{ background: `linear-gradient(135deg, ${activeTopic?.color}, #ff375e)` }}
-                    >
-                      <Settings className="w-6 h-6" />
-                    </div>
+                  <div className="mb-8">
                     <div>
                       <h1 className="text-3xl font-bold text-gray-900">Domain Actions</h1>
                       <p className="text-gray-600 mt-2">
@@ -641,13 +623,7 @@ export default function UserGuidePage() {
 
               {activeSection === "transfer" && (
                 <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div
-                      className="step-number"
-                      style={{ background: `linear-gradient(135deg, ${activeTopic?.color}, #ff375e)` }}
-                    >
-                      <ArrowLeftRight className="w-6 h-6" />
-                    </div>
+                  <div className="mb-8">
                     <div>
                       <h1 className="text-3xl font-bold text-gray-900">Domain Transfer</h1>
                       <p className="text-gray-600 mt-2">
@@ -756,13 +732,7 @@ export default function UserGuidePage() {
 
               {activeSection === "restore" && (
                 <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div
-                      className="step-number"
-                      style={{ background: `linear-gradient(135deg, ${activeTopic?.color}, #ff375e)` }}
-                    >
-                      <RotateCcw className="w-6 h-6" />
-                    </div>
+                  <div className="mb-8">
                     <div>
                       <h1 className="text-3xl font-bold text-gray-900">Domain Restore</h1>
                       <p className="text-gray-600 mt-2">
@@ -865,13 +835,7 @@ export default function UserGuidePage() {
 
               {activeSection === "payment" && (
                 <div className="p-8">
-                  <div className="flex items-center space-x-4 mb-8">
-                    <div
-                      className="step-number"
-                      style={{ background: `linear-gradient(135deg, ${activeTopic?.color}, #ff375e)` }}
-                    >
-                      <CreditCard className="w-6 h-6" />
-                    </div>
+                  <div className="mb-8">
                     <div>
                       <h1 className="text-3xl font-bold text-gray-900">Update Payment Information</h1>
                       <p className="text-gray-600 mt-2">
