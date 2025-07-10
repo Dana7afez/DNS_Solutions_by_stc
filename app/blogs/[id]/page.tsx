@@ -711,8 +711,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="min-h-screen bg-white">
-      <AnimatedHeader />
-
       {/* Hero Section - Consistent styling */}
       <div className="hero-gradient">
         <div className="hero-back-button">

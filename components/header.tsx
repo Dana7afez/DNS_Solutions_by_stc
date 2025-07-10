@@ -18,7 +18,7 @@ export function Header() {
           <div className="flex items-center justify-between w-full navbar-custom">
             {/* Logo */}
             <Link href="/" className="navbar-brand">
-              <img src="logo.svg" alt="Solutions by stc" className="brand" />
+              <img src="/logo.svg" alt="Solutions by stc" className="brand" />
             </Link>
 
             {/* Navigation */}
