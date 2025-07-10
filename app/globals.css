@@ -166,7 +166,7 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
@@ -778,4 +778,71 @@ body {
 
 .nav-item {
   position: relative;
+}
+
+/* Consistent rounded button styles */
+.btn-primary-rounded {
+  background: var(--color-info);
+  color: white;
+  border: 2px solid var(--color-info);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-primary-rounded:hover {
+  background: transparent;
+  color: var(--color-info);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 1, 140, 0.3);
+}
+
+.btn-success-rounded {
+  background: var(--color-success);
+  color: white;
+  border: 2px solid var(--color-success);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-success-rounded:hover {
+  background: transparent;
+  color: var(--color-success);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 196, 140, 0.3);
+}
+
+.btn-secondary-rounded {
+  background: var(--color-primary);
+  color: white;
+  border: 2px solid var(--color-primary);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-secondary-rounded:hover {
+  background: transparent;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 55, 94, 0.3);
 }

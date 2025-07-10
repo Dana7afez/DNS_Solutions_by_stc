@@ -44,10 +44,7 @@ export default function KnowledgeBasePage() {
                 </ul>
               </div>
               <div className="text-center">
-                <div
-                  className="inline-flex items-center px-6 py-3 text-white rounded-lg font-medium group-hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#4f018c" }}
-                >
+                <div className="btn-primary-rounded group-hover:opacity-90 transition-opacity">
                   Browse FAQ
                 </div>
               </div>
@@ -77,10 +74,7 @@ export default function KnowledgeBasePage() {
                 </ul>
               </div>
               <div className="text-center">
-                <div
-                  className="inline-flex items-center px-6 py-3 text-white rounded-lg font-medium group-hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#00c48c" }}
-                >
+                <div className="btn-success-rounded group-hover:opacity-90 transition-opacity">
                   Read Guide
                 </div>
               </div>
@@ -110,10 +104,7 @@ export default function KnowledgeBasePage() {
                 </ul>
               </div>
               <div className="text-center">
-                <div
-                  className="inline-flex items-center px-6 py-3 text-white rounded-lg font-medium group-hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#ff375e" }}
-                >
+                <div className="btn-secondary-rounded group-hover:opacity-90 transition-opacity">
                   Read Blogs
                 </div>
               </div>
