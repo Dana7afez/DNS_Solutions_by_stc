@@ -1,28 +1,34 @@
 "use client"
 
-import { Globe, ChevronDown } from "lucide-react"
+import { Globe, ChevronDown, Menu } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
 export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const handleDropdownToggle = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown)
   }
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false)
+    setActiveDropdown(null)
+  }
+
   return (
     <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white">
-        <div className="container">
+      <nav className="navbar">
+        <div className="container mx-auto px-4">
           <div className="flex items-center justify-between w-full navbar-custom">
             {/* Logo */}
-            <Link href="/" className="navbar-brand">
-              <img src="/logo.svg" alt="Solutions by stc" className="brand" />
+            <Link href="/" className="navbar-brand" onClick={closeMobileMenu}>
+              <img src="/DNS_Solutions_by_stc/logo.svg" alt="Solutions by stc" className="brand" />
             </Link>
 
             {/* Navigation */}
-            <div className="collapse navbar-collapse hidden lg:flex">
+            <div className={`collapse navbar-collapse ${mobileMenuOpen ? 'show' : 'hidden'} lg:flex`}>
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
                   <button 
@@ -56,6 +62,11 @@ export function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link href="/knowledge-base" className="nav-link font-weight-500">
+                    Knowledge Base
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <button 
                     type="button" 
                     className="nav-link font-weight-500"
@@ -67,8 +78,8 @@ export function Header() {
                     <div className="dropdown-menu">
                       <Link href="/faqs" className="dropdown-item">FAQs</Link>
                       <Link href="/user-guide" className="dropdown-item">User Guide</Link>
-                      <Link href="/knowledge-base" className="dropdown-item">Knowledge Base</Link>
                       <Link href="/blogs" className="dropdown-item">Blog</Link>
+                      <Link href="/contact" className="dropdown-item">Contact Support</Link>
                     </div>
                   )}
                 </li>
@@ -89,27 +100,94 @@ export function Header() {
                 <Globe className="icon-globe w-4 h-4" />
               </button>
               
-              <button 
-                type="button" 
+              <Link 
+                href="/login" 
                 className="btn btn-secondary-link mx-2 login"
               >
                 Login
-              </button>
+              </Link>
               
               <Link 
-                href="https://cloud.bluvalt.com/#/register" 
+                href="/register" 
                 className="btn btn-outline-primary register"
               >
                 Register
               </Link>
               
               {/* Mobile Menu Toggle */}
-              <button type="button" className="navbar-toggler lg:hidden">
-                <span className="navbar-toggler-icon"></span>
+              <button 
+                type="button" 
+                className="navbar-toggler lg:hidden"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <Menu className="w-6 h-6" />
               </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-white border-t">
+            <div className="container mx-auto px-4 py-4">
+              <ul className="navbar-nav space-y-2">
+                <li className="nav-item">
+                  <button 
+                    type="button" 
+                    className="nav-link font-weight-500 w-full text-left"
+                    onClick={() => handleDropdownToggle('domains')}
+                  >
+                    <span>Domains <ChevronDown className="inline w-4 h-4 ml-1" /></span>
+                  </button>
+                  {activeDropdown === 'domains' && (
+                    <div className="pl-4 mt-2 space-y-1">
+                      <Link href="/domains" className="dropdown-item block" onClick={closeMobileMenu}>Domain Registration</Link>
+                      <Link href="/transfer" className="dropdown-item block" onClick={closeMobileMenu}>Domain Transfer</Link>
+                      <Link href="/management" className="dropdown-item block" onClick={closeMobileMenu}>Domain Management</Link>
+                    </div>
+                  )}
+                </li>
+                <li className="nav-item">
+                  <Link href="/features" className="nav-link font-weight-500 block" onClick={closeMobileMenu}>
+                    Features
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/pricing" className="nav-link font-weight-500 block" onClick={closeMobileMenu}>
+                    Pricing
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/additional-services" className="nav-link font-weight-500 block" onClick={closeMobileMenu}>
+                    Additional Services
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/knowledge-base" className="nav-link font-weight-500 block" onClick={closeMobileMenu}>
+                    Knowledge Base
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <button 
+                    type="button" 
+                    className="nav-link font-weight-500 w-full text-left"
+                    onClick={() => handleDropdownToggle('support')}
+                  >
+                    <span>Support <ChevronDown className="inline w-4 h-4 ml-1" /></span>
+                  </button>
+                  {activeDropdown === 'support' && (
+                    <div className="pl-4 mt-2 space-y-1">
+                      <Link href="/faqs" className="dropdown-item block" onClick={closeMobileMenu}>FAQs</Link>
+                      <Link href="/user-guide" className="dropdown-item block" onClick={closeMobileMenu}>User Guide</Link>
+                      <Link href="/blogs" className="dropdown-item block" onClick={closeMobileMenu}>Blog</Link>
+                      <Link href="/contact" className="dropdown-item block" onClick={closeMobileMenu}>Contact Support</Link>
+                    </div>
+                  )}
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   )
