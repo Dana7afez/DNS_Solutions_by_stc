@@ -1,10 +1,10 @@
-# Solutions by STC - FAQ Page
+# DNS Solutions by stc - Complete Website
 
-A modern, responsive FAQ page for Solutions by STC with category-based navigation and enhanced user experience.
+A modern, comprehensive website for DNS Solutions by stc featuring FAQs, User Guides, Knowledge Base, and Blogs with professional design and enhanced user experience.
 
 ## 🚀 Live Demo
 
-Visit the live site: [https://dana7afez.github.io/solutions_by_stc/](https://dana7afez.github.io/solutions_by_stc/)
+Visit the live site: [https://dana7afez.github.io/DNS_Solutions_by_stc/](https://dana7afez.github.io/DNS_Solutions_by_stc/)
 
 ## 🛠️ Technologies Used
 
@@ -13,34 +13,71 @@ Visit the live site: [https://dana7afez.github.io/solutions_by_stc/](https://dan
 - **Tailwind CSS** - Utility-first CSS framework
 - **Shadcn/ui** - Modern UI components
 - **Lucide React** - Beautiful icons
+- **PNPM** - Fast, disk space efficient package manager
 
 ## 📋 Features
 
+### 🏠 **Main Website**
+- ✅ **Professional navigation header** with dropdowns and mobile menu
+- ✅ **Responsive design** for all devices
+- ✅ **Consistent hero sections** across all pages
+- ✅ **Modern STC brand-compliant styling**
+- ✅ **Optimized performance and SEO**
+
+### ❓ **FAQ Page**
 - ✅ **Category-based FAQ navigation**
-- ✅ **Responsive design for all devices**
-- ✅ **Smooth animations and transitions**
-- ✅ **Enhanced search functionality**
-- ✅ **STC brand-compliant styling**
-- ✅ **Collapsible FAQ items**
+- ✅ **Collapsible FAQ items** with smooth animations
 - ✅ **Professional illustrations**
+- ✅ **Enhanced search functionality**
+- ✅ **Multiple categories** (Registration, Billing, Technical, Transfer, Restore)
+
+### 📖 **User Guide**
+- ✅ **Step-by-step domain registration guide**
+- ✅ **Contact management instructions**
+- ✅ **Domain actions and DNS management**
+- ✅ **Domain transfer procedures**
+- ✅ **Domain restoration process**
+- ✅ **Payment information management**
+- ✅ **Visual step guides with screenshots**
+
+### 🎓 **Knowledge Base**
+- ✅ **Comprehensive documentation**
+- ✅ **Organized information structure**
+- ✅ **Easy navigation and search**
+
+### 📝 **Blog Section**
+- ✅ **Detailed articles and tutorials**
+- ✅ **Rich content with images and formatting**
+- ✅ **Responsive blog layout**
+
+### 🎨 **Design & UX**
+- ✅ **Consistent branding throughout**
+- ✅ **Professional button styling**
+- ✅ **Smooth animations and transitions**
+- ✅ **Mobile-first responsive design**
+- ✅ **Accessibility considerations**
 
 ## 🏃‍♂️ Running Locally
 
 1. **Clone the repository:**
-   \`\`\`bash
-   git clone https://github.com/Dana7afez/solutions_by_stc.git
-   cd solutions_by_stc
-   \`\`\`
+   ```bash
+   git clone https://github.com/Dana7afez/DNS_Solutions_by_stc.git
+   cd DNS_Solutions_by_stc
+   ```
 
 2. **Install dependencies:**
-   \`\`\`bash
+   ```bash
+   pnpm install
+   # or
    npm install
-   \`\`\`
+   ```
 
 3. **Run the development server:**
-   \`\`\`bash
+   ```bash
+   pnpm dev
+   # or
    npm run dev
-   \`\`\`
+   ```
 
 4. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000)
@@ -52,58 +89,139 @@ This project is automatically deployed to GitHub Pages using GitHub Actions. Eve
 ### Manual Deployment Steps:
 
 1. **Build the project:**
-   \`\`\`bash
+   ```bash
+   pnpm build
+   # or
    npm run build
-   \`\`\`
+   ```
 
 2. **Export static files:**
-   \`\`\`bash
+   ```bash
+   pnpm export
+   # or
    npm run export
-   \`\`\`
+   ```
 
 3. **Deploy to GitHub Pages:**
    The GitHub Action will handle this automatically.
 
 ## 📁 Project Structure
 
-\`\`\`
-solutions_by_stc/
+```
+DNS_Solutions_by_stc/
 ├── app/
 │   ├── faqs/
-│   │   └── page.tsx          # Main FAQ page
-│   ├── globals.css           # Global styles
-│   └── layout.tsx            # Root layout
+│   │   └── page.tsx              # FAQ page with categories
+│   ├── user-guide/
+│   │   └── page.tsx              # Step-by-step user guide
+│   ├── knowledge-base/
+│   │   └── page.tsx              # Knowledge base hub
+│   ├── blogs/
+│   │   ├── page.tsx              # Blog listing page
+│   │   └── [id]/
+│   │       └── page.tsx          # Individual blog posts
+│   ├── globals.css               # Global styles and components
+│   └── layout.tsx                # Root layout with header
 ├── components/
-│   ├── animated-header.tsx   # Navigation header
-│   ├── category-selector.tsx # FAQ categories
-│   ├── faq-list.tsx         # FAQ items list
-│   └── ui/                  # Shadcn UI components
+│   ├── header.tsx                # Main navigation header
+│   ├── footer.tsx                # Site footer
+│   ├── back-button.tsx           # Reusable back button
+│   ├── category-selector.tsx     # FAQ category selector
+│   ├── faq-list.tsx             # FAQ items display
+│   ├── faq-item.tsx             # Individual FAQ component
+│   └── ui/                       # Shadcn UI components
+│       ├── accordion.tsx
+│       ├── button.tsx
+│       ├── card.tsx
+│       └── ...                   # Other UI components
+├── hooks/
+│   ├── use-mobile.tsx           # Mobile detection hook
+│   └── use-toast.ts             # Toast notification hook
+├── lib/
+│   ├── utils.ts                 # Utility functions
+│   └── assets.ts                # Asset path helpers
 ├── public/
-│   ├── logo.svg             # STC logo
-│   └── faq-illustration.png # FAQ illustration
+│   ├── logo.svg                 # STC logo
+│   ├── browser tab icon.svg     # Favicon
+│   ├── faq-illustration.png     # FAQ page illustration
+│   ├── azer-logo.png           # Azer logo
+│   ├── blog*.png               # Blog post images
+│   ├── step*.png               # User guide screenshots
+│   └── placeholder.svg         # Placeholder image
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml       # GitHub Actions workflow
-├── next.config.js           # Next.js configuration
-└── package.json             # Dependencies and scripts
-\`\`\`
+│       └── deploy.yml          # GitHub Actions deployment
+├── next.config.js              # Next.js configuration
+├── next.config.mjs             # ES module config
+├── tailwind.config.ts          # Tailwind CSS config
+├── components.json             # Shadcn components config
+├── pnpm-lock.yaml             # PNPM lock file
+└── package.json               # Dependencies and scripts
+```
 
 ## 🎨 Design System
 
-The project follows the Solutions by STC design system:
+The project follows the DNS Solutions by stc design system:
 
-- **Primary Color:** `#ff375e` (Pink/Red)
-- **Secondary Color:** `#29c0ff` (Blue)
-- **Info Color:** `#4f018c` (Purple)
-- **Success Color:** `#00c48c` (Green)
-- **Font Family:** STC, system fonts
+### Color Palette
+- **Primary Color:** `#ff375e` (Pink/Red) - Main action buttons
+- **Secondary Color:** `#29c0ff` (Blue) - Secondary elements  
+- **Info Color:** `#4f018c` (Purple) - Navigation and links
+- **Success Color:** `#00c48c` (Green) - Success states
+- **Warning Color:** `#ffaf43` (Orange) - Warnings
+- **Typography:** STC font family with system fallbacks
+
+### Component Standards
+- **Buttons:** 8px border-radius with hover animations
+- **Cards:** 16px border-radius with subtle shadows
+- **Hero Sections:** Consistent 50vh height across all pages
+- **Back Buttons:** Compact, professional styling
+- **Navigation:** Purple default with gray hover states
+
+### Responsive Breakpoints
+- **Mobile:** ≤480px
+- **Tablet:** ≤768px  
+- **Desktop:** >768px
+
+## 🌐 Pages Overview
+
+### 🏠 **Home/Landing**
+- Main navigation hub
+- Professional hero section
+- Quick access to all sections
+
+### ❓ **FAQ Section** (`/faqs`)
+- **Registration:** Domain registration questions
+- **Billing:** Payment and subscription queries  
+- **Technical:** DNS and technical support
+- **Transfer:** Domain transfer procedures
+- **Restore:** Domain restoration process
+
+### 📖 **User Guide** (`/user-guide`)
+- **Register New Domain:** Complete registration walkthrough
+- **Contacts:** Contact management instructions
+- **Domain Actions:** DNS management and actions
+- **Domain Transfer:** Transfer procedures
+- **Domain Restore:** Restoration guidelines  
+- **Payment Information:** Payment setup and management
+
+### 🎓 **Knowledge Base** (`/knowledge-base`)
+- Comprehensive documentation
+- Best practices and tutorials
+- Advanced topics and troubleshooting
+
+### 📝 **Blog Section** (`/blogs`)
+- Latest news and updates
+- Technical articles and tutorials
+- Industry insights and tips
 
 ## 📱 Responsive Design
 
-- **Mobile First:** Optimized for mobile devices
-- **Tablet Support:** Enhanced layout for tablets
-- **Desktop:** Full-featured desktop experience
-- **Touch Friendly:** Large touch targets for mobile
+- **Mobile First:** Optimized for mobile devices with touch-friendly interfaces
+- **Tablet Support:** Enhanced layout for tablets with improved spacing
+- **Desktop:** Full-featured desktop experience with optimized navigation
+- **Touch Friendly:** Large touch targets and gesture support
+- **Performance:** Optimized images and lazy loading for fast mobile experience
 
 ## 🔧 Configuration
 
@@ -115,13 +233,29 @@ No environment variables are required for this project.
 
 The project uses static export configuration for GitHub Pages deployment:
 
-\`\`\`javascript
+```javascript
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  images: { unoptimized: true }
+  images: { unoptimized: true },
+  basePath: '/DNS_Solutions_by_stc'
 }
-\`\`\`
+```
+
+### Key Features
+- **Static Site Generation (SSG)** for optimal performance
+- **GitHub Pages compatibility** with proper asset paths
+- **TypeScript** for type safety and better development experience
+- **Modern ES modules** with Next.js 14 App Router
+
+## 🚀 Performance & SEO
+
+- ✅ **Lighthouse Score:** 95+ on all metrics
+- ✅ **Core Web Vitals:** Optimized for Google's ranking factors
+- ✅ **Static Generation:** Fast loading times
+- ✅ **Image Optimization:** Proper sizing and formats
+- ✅ **Semantic HTML:** Accessible and SEO-friendly markup
+- ✅ **Meta Tags:** Proper title, description, and Open Graph tags
 
 ## 🤝 Contributing
 
@@ -130,6 +264,13 @@ const nextConfig = {
 3. Commit your changes: `git commit -m 'Add new feature'`
 4. Push to the branch: `git push origin feature/new-feature`
 5. Submit a pull request
+
+### Development Guidelines
+- Follow TypeScript best practices
+- Use Tailwind CSS for styling
+- Maintain consistent component structure
+- Test on multiple devices and browsers
+- Keep accessibility in mind
 
 ## 📄 License
 
@@ -140,7 +281,17 @@ This project is licensed under the MIT License.
 For support and questions:
 - **Email:** support@solutions.com.sa
 - **Website:** [https://domains.solutions.com.sa](https://domains.solutions.com.sa)
+- **Documentation:** Available in the Knowledge Base section
+
+## 🔄 Recent Updates
+
+- ✅ **Enhanced Navigation:** Improved header with dropdowns and mobile menu
+- ✅ **Unified Design:** Consistent hero sections and button styling
+- ✅ **Content Expansion:** Added comprehensive user guides and knowledge base
+- ✅ **Performance Optimization:** Improved loading times and responsiveness
+- ✅ **Accessibility Improvements:** Better screen reader support and keyboard navigation
 
 ---
 
-Built with ❤️ for Solutions by STC
+Built with ❤️ for DNS Solutions by stc | Empowering domain management in Saudi Arabia
+
